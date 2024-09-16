@@ -1,0 +1,16 @@
+{
+  "name": "rescript-effect",
+  "version": "1.0.6",
+  "keyword": [
+    "rescript"
+  ],
+  "scripts": {
+    "dev:res": "rescript build -w -with-deps",
+    "prod:res": "rescript"
+  },
+  "dependencies": {
+    "rescript": "11.1.4",
+    "@rescript/core": "1.5.2",
+    "rescript-schema": "8.2.0"
+  }
+}

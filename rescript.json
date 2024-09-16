@@ -1,0 +1,33 @@
+{
+  "name": "rescript-effect",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "suffix": ".mjs",
+  "package-specs": {
+    "module": "esmodule",
+    "in-source": true
+  },
+  "jsx": {
+    "version": 4,
+    "mode": "classic"
+  },
+  "bs-dependencies": ["@rescript/core", "rescript-schema"],
+  "bsc-flags": ["-open RescriptSchema", "-open RescriptCore"],
+  "gentypeconfig": {
+    "language": "typescript",
+    "generatedFileExtension": ".gen.ts",
+    "module": "commonjs",
+    "importPath": "relative",
+    "debug": {
+      "all": false,
+      "basic": false
+    }
+  },
+  "warnings": {
+    "error": "+8"
+  }
+}
